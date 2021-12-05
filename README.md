@@ -2,6 +2,11 @@
 
 Simple CLI tools to load a subset of Wikidata into Elasticsearch. Based on the [Heritage Connector](https://www.sciencemuseumgroup.org.uk/project/heritage-connector/) project.
 
+Fork objectives:
+
+- Bug fixes
+- Retrieve all wikidata doc claims, instead of pre-defined set of claims.
+
 - [Why?](#why)
 - [Setup](#setup)
 - [Usage](#usage)
