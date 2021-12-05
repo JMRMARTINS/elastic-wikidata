@@ -168,8 +168,8 @@ def simplify_wbgetentities_result(
     newdoc["claims"] = {}
 
     if "claims" in doc:
-        for p in properties:
-            if p in doc["claims"]:
+        #for p in properties:
+         for p in doc["claims"]:
                 claims = []
                 for i in doc["claims"][p]:
                     try:
