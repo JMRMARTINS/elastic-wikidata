@@ -1,6 +1,6 @@
 # Elastic Wikidata
 
-Simple CLI tools to load a subset of Wikidata into Elasticsearch. Part of the [Heritage Connector](https://www.sciencemuseumgroup.org.uk/project/heritage-connector/) project.
+Simple CLI tools to load a subset of Wikidata into Elasticsearch. Based on the [Heritage Connector](https://www.sciencemuseumgroup.org.uk/project/heritage-connector/) project.
 
 - [Why?](#why)
 - [Installation](#installation)
