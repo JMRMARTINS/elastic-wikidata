@@ -24,25 +24,25 @@ def get_entities_from_query(query, page_size=None, limit=None) -> list:
     """
     page_size = 500
     limit = 9999999999
-    if page_size:
-        pages = paginate_sparql_query(query, page_size=page_size)
-    else:
-        pages = [query]
+ #   if page_size:
+ #      pages = paginate_sparql_query(query, page_size=page_size)
+ #  else:
+ #   pages = [query]
 
-    if limit:
-        page_limit = ceil(limit / page_size)
-        pages = islice(pages, page_limit)
+ #   if limit:
+ #      page_limit = ceil(limit / page_size)
+ #       pages = islice(pages, page_limit)
 
     all_entities = []
 
-    for query in tqdm(pages, total=(page_limit or None)):
-        res = run_query(query)
-        var = res["head"]["vars"][0]
-        entities = [url_to_qid(x[var]["value"]) for x in res["results"]["bindings"]]
-        all_entities += entities
+   # for query in tqdm(pages, total=(page_limit or None)):
+    res = run_query(query)
+    var = res["head"]["vars"][0]
+    entities = [url_to_qid(x[var]["value"]) for x in res["results"]["bindings"]]
+    all_entities += entities
 
         # stop when page of query returns fewer items than the page size
-        if len(entities) < page_size:
-            break
+    #   if len(entities) < page_size:
+    #        break
 
     return all_entities
