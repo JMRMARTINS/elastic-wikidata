@@ -3,7 +3,6 @@
 Simple CLI tools to load a subset of Wikidata into Elasticsearch. Based on the [Heritage Connector](https://www.sciencemuseumgroup.org.uk/project/heritage-connector/) project.
 
 - [Why?](#why)
-- [Installation](#installation)
 - [Setup](#setup)
 - [Usage](#usage)
   - [Loading from Wikidata dump (.ndjson)](#loading-from-wikidata-dump-ndjson)
@@ -27,15 +26,6 @@ There are a couple of reasons you may not want to do this when running searches 
 
 *<sup>&ast;</sup> [CirrusSearch](https://www.mediawiki.org/wiki/Extension:CirrusSearch) is a Wikidata extension that enables direct search on Wikidata using Elasticsearch, if you require powerful search and are happy with the rate limit.*
 
-## Installation
-
-from pypi: `pip install elastic_wikidata`
-
-from repo:
-
-1. Download
-2. `cd` into root
-3. `pip install -e .`
 
 ## Setup
 
