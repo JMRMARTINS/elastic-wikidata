@@ -22,7 +22,7 @@ def get_entities_from_query(query, page_size=None, limit=None) -> list:
 
     Returns list of entities in form (Qd+).
     """
-    page_size = 1000
+    page_size = 500
     limit = 9999999999
     if page_size:
         pages = paginate_sparql_query(query, page_size=page_size)
